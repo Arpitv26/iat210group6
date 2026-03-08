@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pancheesa | IAT 210 Board Game Project</title>
+  <meta name="description" content="IAT 210 Group 6 board game project website for Pancheesa.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-wrap">
+      <p class="site-kicker">IAT 210 · Group 6</p>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Tabs</button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary tabs">
+        <a class="tab-link is-active" href="#banner" data-tab-target="home">Home</a>
+        <a class="tab-link" href="#components-gallery" data-tab-target="components">Components Gallery</a>
+        <a class="tab-link" href="#rulebook" data-tab-target="docs">Logs & Analysis</a>
+        <a class="tab-link" href="#team-contributions" data-tab-target="contributions">Contributions</a>
+      </nav>
+    </div>
+    <div class="scroll-progress" aria-hidden="true">
+      <span class="scroll-progress-bar"></span>
+    </div>
+  </header>
+
+  <main>
+    <section class="tab-panel is-active" data-tab-panel="home" aria-label="Home tab">
+      <div class="tab-layout">
+        <aside class="section-nav-wrap">
+          <p class="section-nav-title">Home</p>
+          <nav class="section-nav" aria-label="Home sections">
+            <a href="#banner" data-tab-target="home">Banner</a>
+            <a href="#game-title" data-tab-target="home">Title</a>
+            <a href="#core-statement" data-tab-target="home">Core Statement</a>
+            <a href="#trailer" data-tab-target="home">Trailer</a>
+            <a href="#inspiration" data-tab-target="home">Inspiration</a>
+            <a href="#pillars" data-tab-target="home">Pillars</a>
+            <a href="#backstory" data-tab-target="home">Backstory</a>
+          </nav>
+        </aside>
+        <div class="tab-content">
+          <section id="banner" class="panel banner-section reveal reveal-zoom">
+            <h2>Banner Image</h2>
+            <figure class="banner-figure">
+              <img src="ChatGPT Image Mar 7, 2026, 01_31_16 AM.png" alt="Main board concept for Pancheesa.">
+            </figure>
+          </section>
+
+          <section id="game-title" class="panel text-section game-title-section reveal reveal-pop">
+            <h2>Game Title</h2>
+            <h1>Pancheesa</h1>
+          </section>
+
+          <section id="core-statement" class="panel text-section reveal reveal-slide-left">
+            <p>On the continent of Pancheesa, four starving kingdoms send their bravest mice to battle for the last remaining cheese.</p>
+          </section>
+
+          <section id="trailer" class="panel media-section reveal reveal-slide-right">
+            <h2>Trailer</h2>
+            <div class="media-card">
+              <p class="status pending">Pending</p>
+              <h3>Board Game Trailer</h3>
+              <p>Placeholder for now.</p>
+              <button class="button button-disabled" type="button" disabled>Trailer Placeholder</button>
+            </div>
+          </section>
+
+          <section id="inspiration" class="panel text-section reveal reveal-slide-left">
+            <h2>Inspiration Paragraph</h2>
+            <p>The game is loosely inspired by the expedition structure in the 2025 video game Expedition 33, in which a torn city repeatedly sends groups into the world to accomplish a larger survival objective. In our design, each kingdom similarly deploys units to gather scarce resources and secure long-term dominance. However, our implementation shifts this idea into a competitive board-game format centred on spatial control, risk management, and PVP interaction.</p>
+            <p>We also drew inspiration from Monopoly by including action and reaction cards that introduce randomness and situational shifts, increasing replayability and dynamic decision-making. The game’s unit diversity takes inspiration from the various classes players can choose from in JRPGs. Some games we took inspiration from were the Dragon Quest series and Metaphor ReFantazio. Other aspects of the game, like the tunnel system and the resource-return mechanic, came naturally as we tried to build around factional tension and a cheese-based resource-scarcity type of gameplay.</p>
+          </section>
+
+          <section id="pillars" class="panel cards-section reveal reveal-pop">
+            <h2>Three Pillars (What / Why / How)</h2>
+            <div class="pillars-grid">
+              <article class="pillar-card">
+                <h3>What?</h3>
+                <p>Compete to secure scarce cheese resources across a shared board</p>
+              </article>
+              <article class="pillar-card">
+                <h3>Why?</h3>
+                <p>To eliminate neighbouring Kingdoms to become the Cheese Bearer</p>
+              </article>
+              <article class="pillar-card">
+                <h3>How?</h3>
+                <p>Deploy units to scavenge, steal, defend, and fight using cards, dice, and positioning</p>
+              </article>
+            </div>
+          </section>
+
+          <section id="backstory" class="panel text-section reveal reveal-slide-right">
+            <h2>Thematic Backstory</h2>
+            <h3>The Great Fromage Gommage</h3>
+            <p>Long ago, the continent of Pancheesa was a barren wasteland until Mouses descended from the sky, echoing blessings from the Mouse God of Cheese. Under his wisdom, Pancheesa became a land of abundance. Rivers flowed with whey, hills ripened with golden cheddar, and many kingdoms thrived in harmony under the sacred Cheese Treaty that promised every mouse access to cheese. For 100 years, peace reigned.</p>
+            <p>But peace can only last so long…</p>
+            <p>From the caves in the icy regions of Pancheesa, the shadow of the Ferious Feline Felix fell across the land. He spouted madness about overconsumption of cheese, and distrust began to spread. Felix ignited fear, paranoia and betrayal for all the kingdoms. The Treaty was shattered. Thus began the Great Fromage Gommage, a devastating war that drained Pancheesa of its once-infinite supply of cheese.</p>
+            <p>Now, only four kingdoms remain…and cheese is scarce….</p>
+            <p>To survive, each kingdom must</p>
+            <ul>
+              <li>Send out units to gather the remaining cheese</li>
+              <li>Protect their borders from rival kingdoms</li>
+              <li>Strategically eliminate competitors</li>
+              <li>Secure dominance over Pancheesa</li>
+            </ul>
+            <p>Only then, one ruler will claim the title of The Cheese Bearer!</p>
+            <h3>The Four Remaining Kingdoms</h3>
+            <p><em>The Kingdom by the Sea</em></p>
+            <p>Ruled by Socrattus, a philosopher-king who believes strategy is stronger than strength.</p>
+            <p>The mind games they play on you not only confuse you, but them, too</p>
+            <p><em>The Kingdom Beneath the Sands</em></p>
+            <p>Ruled by Julius Cheeser, a bold and ambitious tactician</p>
+            <p>Their forces strike fast and retreat even faster</p>
+            <p><em>The Kingdom protected by the Mountains</em></p>
+            <p>Ruled by Mouser Teresa, a steadfast defender of tradition</p>
+            <p>Their strongholds are nearly impossible to conquer, that some have a hard time even leaving.</p>
+            <p><em>The Kingdom hidden in the Forest</em></p>
+            <p>Ruled by Squeakspeare, a cunning ruler of shadow and whispers.</p>
+            <p>Master of ambush, deception, and stageplays</p>
+            <h3>The World of Pancheesa</h3>
+            <p><em>The Undercheese Passageways</em></p>
+            <p>The Cheese Tunnels were originally used for trading, diplomacy, and avoiding awkward social interactions…</p>
+            <p>Ever since the Great Fromage Gommage, the tunnels have been repurposed for surprise attacks, strategic escapes, and cowering away from Felix.</p>
+            <p>No one remembers who built these tunnel systems. The Guild of Thieves claims credit, but nobody really trusts them.</p>
+            <p><em>Hazards of the Land</em></p>
+            <p>The current state of Pancheesa is dangerous! The Ferious Feline Felix roams the land, judging everyone silently. The environment gets hit with frequent sandstorms (mostly because Julius Cheeser keeps challenging the wind). Mouse Pirates terrorize the roads with their mateys, waiting to ambush any kingdom unit.</p>
+            <p><em>Action and Reaction!</em></p>
+            <p>War requires innovation. Luckily, each Kingdom is ready to make use of whatever it can to succeed. Some tactics include:</p>
+            <ul>
+              <li>Mouse wheels- Strap yourself in and roll dramatically across the board</li>
+              <li>Carrier Pigeons- Sometimes walking is too much, fly back to your kingdom</li>
+              <li>Mousetraps- Ironically effective when fighting other mice</li>
+              <li>Poison Arrows- Slow enemies and ruin friendships</li>
+            </ul>
+            <p><em>The Units of Pancheesa</em></p>
+            <ul>
+              <li>Hero Mice: Your standard-issue adventurer. Motivated by glory, destiny, and mild delusion.</li>
+              <li>Backpack Mice: Can carry extra cheese with their XL backpack. Maybe not strong enough to carry the extra piece of cheese, but its kinda too late to complain</li>
+              <li>Thief Mice: These ninja-like mice can avoid traps. They dress like ninjas but live a pretty fashionable lifestyle when not on the clock</li>
+              <li>Warrior Mice: They train daily with their broadsword, so you do not want to be on the other side of their blade. You can also find them working part-time as a barista since the economy is tough.</li>
+              <li>Wizard Mice: Ancient, wise, and slightly dramatic. They have the advantage when being attacked by enemies. They have ties to the creation of the Cheese Treaty, but it's rare to see them nowadays</li>
+              <li>Archer Mice: Deadly from a distance. A bit nervous when up close. Their long-range attacks strike fear into opposing units</li>
+              <li>Knight Mice: Also known as the Three Mouseketeers, they share a strong bond with each other. Difficult to steal from due to their flawless teamwork</li>
+              <li>The Necromicer: A user of forbidden magic. They can revive fallen units and probably have your name written down somewhere…</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="tab-panel" data-tab-panel="components" aria-label="Components gallery tab" hidden>
+      <div class="tab-layout">
+        <aside class="section-nav-wrap">
+          <p class="section-nav-title">Components</p>
+          <nav class="section-nav" aria-label="Components sections">
+            <a href="#components-gallery" data-tab-target="components">Overview</a>
+            <a href="#components-main-board" data-tab-target="components">Main Board</a>
+            <a href="#components-action" data-tab-target="components">Action</a>
+            <a href="#components-reaction" data-tab-target="components">Reaction</a>
+            <a href="#components-hazard" data-tab-target="components">Hazard</a>
+            <a href="#components-tiles" data-tab-target="components">Tiles</a>
+            <a href="#components-units" data-tab-target="components">Units</a>
+            <a href="#components-web-exports" data-tab-target="components">Web Exports</a>
+          </nav>
+        </aside>
+        <div class="tab-content">
+          <section id="components-gallery" class="panel gallery-section reveal reveal-fade">
+            <h2>Components Gallery</h2>
+            <p class="gallery-intro">Organized source assets by gameplay role for review and presentation.</p>
+
+            <article id="components-main-board" class="component-group component-group-board">
+              <h3>Main Board</h3>
+              <p class="group-count">Primary board layout.</p>
+              <div class="gallery-grid gallery-grid-board">
+                <figure class="gallery-card gallery-card-board">
+                  <img src="assets/board/main-board.png" alt="Main board layout for Pancheesa" loading="lazy" decoding="async">
+                  <figcaption>
+                    <span class="asset-label">main-board.png</span>
+                    <span class="asset-meta">assets/board</span>
+                  </figcaption>
+                </figure>
+              </div>
+            </article>
+
+            <article id="components-action" class="component-group">
+              <h3>Action Cards</h3>
+              <p class="group-count">88 source assets across all unit classes.</p>
+              <section class="gallery-subgroup" aria-label="Archer Mouse Action">
+                <h4>Archer Mouse Action</h4>
+                <div class="gallery-grid">
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Archer Mouse Action/Carrier_Pigeon_Card.png" alt="Archer Mouse Action Carrier Pigeon Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Carrier_Pigeon_Card.png</span>
+                      <span class="asset-meta">Archer Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Archer Mouse Action/Critical_Hit_Card (1).png" alt="Archer Mouse Action Critical Hit Card 1 png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Critical_Hit_Card (1).png</span>
+                      <span class="asset-meta">Archer Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Archer Mouse Action/Gluttony_Card (1).png" alt="Archer Mouse Action Gluttony Card 1 png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Gluttony_Card (1).png</span>
+                      <span class="asset-meta">Archer Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Archer Mouse Action/Hazard_Card.png" alt="Archer Mouse Action Hazard Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Hazard_Card.png</span>
+                      <span class="asset-meta">Archer Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Archer Mouse Action/Map_Card (1).png" alt="Archer Mouse Action Map Card 1 png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Map_Card (1).png</span>
+                      <span class="asset-meta">Archer Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Archer Mouse Action/Mouse_Wheel_Card (1).png" alt="Archer Mouse Action Mouse Wheel Card 1 png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Mouse_Wheel_Card (1).png</span>
+                      <span class="asset-meta">Archer Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Archer Mouse Action/Shield_Card (1).png" alt="Archer Mouse Action Shield Card 1 png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Shield_Card (1).png</span>
+                      <span class="asset-meta">Archer Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Archer Mouse Action/Sniffing_Enhancement_Card (1).png" alt="Archer Mouse Action Sniffing Enhancement Card 1 png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Sniffing_Enhancement_Card (1).png</span>
+                      <span class="asset-meta">Archer Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Archer Mouse Action/Steal_Card_Fixed (1).png" alt="Archer Mouse Action Steal Card Fixed 1 png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Steal_Card_Fixed (1).png</span>
+                      <span class="asset-meta">Archer Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Archer Mouse Action/Stun_Attack_Card (1).png" alt="Archer Mouse Action Stun Attack Card 1 png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Stun_Attack_Card (1).png</span>
+                      <span class="asset-meta">Archer Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Archer Mouse Action/Teleport_Card (1).png" alt="Archer Mouse Action Teleport Card 1 png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Teleport_Card (1).png</span>
+                      <span class="asset-meta">Archer Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                </div>
+              </section>
+              <section class="gallery-subgroup" aria-label="Backpack Mouse Action">
+                <h4>Backpack Mouse Action</h4>
+                <div class="gallery-grid">
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Backpack Mouse Action/Carrier_Pigeon_Card.png" alt="Backpack Mouse Action Carrier Pigeon Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Carrier_Pigeon_Card.png</span>
+                      <span class="asset-meta">Backpack Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Backpack Mouse Action/Critical_Hit_Card.png" alt="Backpack Mouse Action Critical Hit Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Critical_Hit_Card.png</span>
+                      <span class="asset-meta">Backpack Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Backpack Mouse Action/Gluttony_Card.png" alt="Backpack Mouse Action Gluttony Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Gluttony_Card.png</span>
+                      <span class="asset-meta">Backpack Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Backpack Mouse Action/Hazard_Card.png" alt="Backpack Mouse Action Hazard Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Hazard_Card.png</span>
+                      <span class="asset-meta">Backpack Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Backpack Mouse Action/Image.png" alt="Backpack Mouse Action Image png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Image.png</span>
+                      <span class="asset-meta">Backpack Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Backpack Mouse Action/Map_Card.png" alt="Backpack Mouse Action Map Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Map_Card.png</span>
+                      <span class="asset-meta">Backpack Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Backpack Mouse Action/Mouse_Wheel_Card.png" alt="Backpack Mouse Action Mouse Wheel Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Mouse_Wheel_Card.png</span>
+                      <span class="asset-meta">Backpack Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Backpack Mouse Action/Shield_Card.png" alt="Backpack Mouse Action Shield Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Shield_Card.png</span>
+                      <span class="asset-meta">Backpack Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Backpack Mouse Action/Steal_Card.png" alt="Backpack Mouse Action Steal Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Steal_Card.png</span>
+                      <span class="asset-meta">Backpack Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Backpack Mouse Action/Stun_Attack_Card.png" alt="Backpack Mouse Action Stun Attack Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Stun_Attack_Card.png</span>
+                      <span class="asset-meta">Backpack Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Backpack Mouse Action/Teleport_Card.png" alt="Backpack Mouse Action Teleport Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Teleport_Card.png</span>
+                      <span class="asset-meta">Backpack Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                </div>
+              </section>
+              <section class="gallery-subgroup" aria-label="Hero Mouse Action">
+                <h4>Hero Mouse Action</h4>
+                <div class="gallery-grid">
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Hero Mouse Action/Carrier_Pigeon_Card.png" alt="Hero Mouse Action Carrier Pigeon Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Carrier_Pigeon_Card.png</span>
+                      <span class="asset-meta">Hero Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Hero Mouse Action/Critical_Hit_Card.png" alt="Hero Mouse Action Critical Hit Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Critical_Hit_Card.png</span>
+                      <span class="asset-meta">Hero Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Hero Mouse Action/Gluttony_Card.png" alt="Hero Mouse Action Gluttony Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Gluttony_Card.png</span>
+                      <span class="asset-meta">Hero Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Hero Mouse Action/Hazard_Card.png" alt="Hero Mouse Action Hazard Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Hazard_Card.png</span>
+                      <span class="asset-meta">Hero Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Hero Mouse Action/Map_Card.png" alt="Hero Mouse Action Map Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Map_Card.png</span>
+                      <span class="asset-meta">Hero Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Hero Mouse Action/Mouse_Wheel_Card.png" alt="Hero Mouse Action Mouse Wheel Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Mouse_Wheel_Card.png</span>
+                      <span class="asset-meta">Hero Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Hero Mouse Action/Shield_Card.png" alt="Hero Mouse Action Shield Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Shield_Card.png</span>
+                      <span class="asset-meta">Hero Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Hero Mouse Action/Sniffing_Enhancement_Card_Fixed.png" alt="Hero Mouse Action Sniffing Enhancement Card Fixed png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Sniffing_Enhancement_Card_Fixed.png</span>
+                      <span class="asset-meta">Hero Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Hero Mouse Action/Steal_Card.png" alt="Hero Mouse Action Steal Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Steal_Card.png</span>
+                      <span class="asset-meta">Hero Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Hero Mouse Action/Stun_Attack_Card.png" alt="Hero Mouse Action Stun Attack Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Stun_Attack_Card.png</span>
+                      <span class="asset-meta">Hero Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Hero Mouse Action/Teleport_Card.png" alt="Hero Mouse Action Teleport Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Teleport_Card.png</span>
+                      <span class="asset-meta">Hero Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                </div>
+              </section>
+              <section class="gallery-subgroup" aria-label="Knight Mouse Action">
+                <h4>Knight Mouse Action</h4>
+                <div class="gallery-grid">
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Knight Mouse Action/Carrier_Pigeon_Card.png" alt="Knight Mouse Action Carrier Pigeon Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Carrier_Pigeon_Card.png</span>
+                      <span class="asset-meta">Knight Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Knight Mouse Action/Critical_Hit_Card.png" alt="Knight Mouse Action Critical Hit Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Critical_Hit_Card.png</span>
+                      <span class="asset-meta">Knight Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Knight Mouse Action/Gluttony_Card.png" alt="Knight Mouse Action Gluttony Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Gluttony_Card.png</span>
+                      <span class="asset-meta">Knight Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Knight Mouse Action/Hazard_Card.png" alt="Knight Mouse Action Hazard Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Hazard_Card.png</span>
+                      <span class="asset-meta">Knight Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Knight Mouse Action/Map_Card.png" alt="Knight Mouse Action Map Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Map_Card.png</span>
+                      <span class="asset-meta">Knight Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Knight Mouse Action/Mouse_Wheel_Card.png" alt="Knight Mouse Action Mouse Wheel Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Mouse_Wheel_Card.png</span>
+                      <span class="asset-meta">Knight Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Knight Mouse Action/Shield_Card.png" alt="Knight Mouse Action Shield Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Shield_Card.png</span>
+                      <span class="asset-meta">Knight Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Knight Mouse Action/Sniffing_Enhancement_Card.png" alt="Knight Mouse Action Sniffing Enhancement Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Sniffing_Enhancement_Card.png</span>
+                      <span class="asset-meta">Knight Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Knight Mouse Action/Steal_Card.png" alt="Knight Mouse Action Steal Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Steal_Card.png</span>
+                      <span class="asset-meta">Knight Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Knight Mouse Action/Stun_Attack_Card_Dark_Purple.png" alt="Knight Mouse Action Stun Attack Card Dark Purple png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Stun_Attack_Card_Dark_Purple.png</span>
+                      <span class="asset-meta">Knight Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Knight Mouse Action/Teleport_Card_Resized.png" alt="Knight Mouse Action Teleport Card Resized png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Teleport_Card_Resized.png</span>
+                      <span class="asset-meta">Knight Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                </div>
+              </section>
+              <section class="gallery-subgroup" aria-label="Necromicer Action">
+                <h4>Necromicer Action</h4>
+                <div class="gallery-grid">
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Necromicer Action/Carrier_Pigeon_Card.png" alt="Necromicer Action Carrier Pigeon Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Carrier_Pigeon_Card.png</span>
+                      <span class="asset-meta">Necromicer Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Necromicer Action/Critical_Hit_Card.png" alt="Necromicer Action Critical Hit Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Critical_Hit_Card.png</span>
+                      <span class="asset-meta">Necromicer Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Necromicer Action/Gluttony_Card_Fixed.png" alt="Necromicer Action Gluttony Card Fixed png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Gluttony_Card_Fixed.png</span>
+                      <span class="asset-meta">Necromicer Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Necromicer Action/Hazard_Card.png" alt="Necromicer Action Hazard Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Hazard_Card.png</span>
+                      <span class="asset-meta">Necromicer Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Necromicer Action/Image 1.png" alt="Necromicer Action Image 1 png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Image 1.png</span>
+                      <span class="asset-meta">Necromicer Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Necromicer Action/Image.png" alt="Necromicer Action Image png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Image.png</span>
+                      <span class="asset-meta">Necromicer Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Necromicer Action/Map_Card.png" alt="Necromicer Action Map Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Map_Card.png</span>
+                      <span class="asset-meta">Necromicer Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Necromicer Action/Mouse_Wheel_Card.png" alt="Necromicer Action Mouse Wheel Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Mouse_Wheel_Card.png</span>
+                      <span class="asset-meta">Necromicer Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Necromicer Action/Shield_Card.png" alt="Necromicer Action Shield Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Shield_Card.png</span>
+                      <span class="asset-meta">Necromicer Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Necromicer Action/Stun_Attack_Card.png" alt="Necromicer Action Stun Attack Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Stun_Attack_Card.png</span>
+                      <span class="asset-meta">Necromicer Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Necromicer Action/Teleport_Card.png" alt="Necromicer Action Teleport Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Teleport_Card.png</span>
+                      <span class="asset-meta">Necromicer Action</span>
+                    </figcaption>
+                  </figure>
+                </div>
+              </section>
+              <section class="gallery-subgroup" aria-label="Thief Mouse Action">
+                <h4>Thief Mouse Action</h4>
+                <div class="gallery-grid">
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Thief Mouse Action/Carrier_Pigeon_Card_Rectangle.png" alt="Thief Mouse Action Carrier Pigeon Card Rectangle png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Carrier_Pigeon_Card_Rectangle.png</span>
+                      <span class="asset-meta">Thief Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Thief Mouse Action/Critical_Hit_Card_Fixed.png" alt="Thief Mouse Action Critical Hit Card Fixed png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Critical_Hit_Card_Fixed.png</span>
+                      <span class="asset-meta">Thief Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Thief Mouse Action/Gluttony_Card.png" alt="Thief Mouse Action Gluttony Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Gluttony_Card.png</span>
+                      <span class="asset-meta">Thief Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Thief Mouse Action/Hazard_Card.png" alt="Thief Mouse Action Hazard Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Hazard_Card.png</span>
+                      <span class="asset-meta">Thief Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Thief Mouse Action/Map_Card.png" alt="Thief Mouse Action Map Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Map_Card.png</span>
+                      <span class="asset-meta">Thief Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Thief Mouse Action/Mouse_Wheel_Card.png" alt="Thief Mouse Action Mouse Wheel Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Mouse_Wheel_Card.png</span>
+                      <span class="asset-meta">Thief Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Thief Mouse Action/Sniffing_Enhancement_Card_Final.png" alt="Thief Mouse Action Sniffing Enhancement Card Final png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Sniffing_Enhancement_Card_Final.png</span>
+                      <span class="asset-meta">Thief Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Thief Mouse Action/Steal_Card.png" alt="Thief Mouse Action Steal Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Steal_Card.png</span>
+                      <span class="asset-meta">Thief Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Thief Mouse Action/Stun_Attack_Card.png" alt="Thief Mouse Action Stun Attack Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Stun_Attack_Card.png</span>
+                      <span class="asset-meta">Thief Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Thief Mouse Action/Teleport_Card.png" alt="Thief Mouse Action Teleport Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Teleport_Card.png</span>
+                      <span class="asset-meta">Thief Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Thief Mouse Action/Thief_Shield_Card_Final.png" alt="Thief Mouse Action Thief Shield Card Final png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Thief_Shield_Card_Final.png</span>
+                      <span class="asset-meta">Thief Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                </div>
+              </section>
+              <section class="gallery-subgroup" aria-label="Warrior Mouse Action">
+                <h4>Warrior Mouse Action</h4>
+                <div class="gallery-grid">
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Warrior Mouse Action/Carrier_Pigeon_Card.png" alt="Warrior Mouse Action Carrier Pigeon Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Carrier_Pigeon_Card.png</span>
+                      <span class="asset-meta">Warrior Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Warrior Mouse Action/Critical_Hit_Card.png" alt="Warrior Mouse Action Critical Hit Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Critical_Hit_Card.png</span>
+                      <span class="asset-meta">Warrior Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Warrior Mouse Action/Gluttony_Card.png" alt="Warrior Mouse Action Gluttony Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Gluttony_Card.png</span>
+                      <span class="asset-meta">Warrior Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Warrior Mouse Action/Hazard_Card.png" alt="Warrior Mouse Action Hazard Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Hazard_Card.png</span>
+                      <span class="asset-meta">Warrior Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Warrior Mouse Action/Map_Card.png" alt="Warrior Mouse Action Map Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Map_Card.png</span>
+                      <span class="asset-meta">Warrior Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Warrior Mouse Action/Mouse_Wheel_Card.png" alt="Warrior Mouse Action Mouse Wheel Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Mouse_Wheel_Card.png</span>
+                      <span class="asset-meta">Warrior Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Warrior Mouse Action/Shield_Card.png" alt="Warrior Mouse Action Shield Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Shield_Card.png</span>
+                      <span class="asset-meta">Warrior Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Warrior Mouse Action/Sniffing_Enhancement_Card.png" alt="Warrior Mouse Action Sniffing Enhancement Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Sniffing_Enhancement_Card.png</span>
+                      <span class="asset-meta">Warrior Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Warrior Mouse Action/Steal_Card.png" alt="Warrior Mouse Action Steal Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Steal_Card.png</span>
+                      <span class="asset-meta">Warrior Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Warrior Mouse Action/Stun_Attack_Card.png" alt="Warrior Mouse Action Stun Attack Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Stun_Attack_Card.png</span>
+                      <span class="asset-meta">Warrior Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Warrior Mouse Action/Teleport_Card_Fixed.png" alt="Warrior Mouse Action Teleport Card Fixed png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Teleport_Card_Fixed.png</span>
+                      <span class="asset-meta">Warrior Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                </div>
+              </section>
+              <section class="gallery-subgroup" aria-label="Wizard Mouse Action">
+                <h4>Wizard Mouse Action</h4>
+                <div class="gallery-grid">
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Wizard Mouse Action/Carrier_Pigeon_Card.png" alt="Wizard Mouse Action Carrier Pigeon Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Carrier_Pigeon_Card.png</span>
+                      <span class="asset-meta">Wizard Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Wizard Mouse Action/Critical_Hit_Card.png" alt="Wizard Mouse Action Critical Hit Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Critical_Hit_Card.png</span>
+                      <span class="asset-meta">Wizard Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Wizard Mouse Action/Gluttony_Card.png" alt="Wizard Mouse Action Gluttony Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Gluttony_Card.png</span>
+                      <span class="asset-meta">Wizard Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Wizard Mouse Action/Hazard_Card_Fixed.png" alt="Wizard Mouse Action Hazard Card Fixed png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Hazard_Card_Fixed.png</span>
+                      <span class="asset-meta">Wizard Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Wizard Mouse Action/Map_Card.png" alt="Wizard Mouse Action Map Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Map_Card.png</span>
+                      <span class="asset-meta">Wizard Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Wizard Mouse Action/Mouse_Wheel_Card.png" alt="Wizard Mouse Action Mouse Wheel Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Mouse_Wheel_Card.png</span>
+                      <span class="asset-meta">Wizard Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Wizard Mouse Action/Shield_Card.png" alt="Wizard Mouse Action Shield Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Shield_Card.png</span>
+                      <span class="asset-meta">Wizard Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Wizard Mouse Action/Sniffing_Enhancement_Card_Text_Fixed.png" alt="Wizard Mouse Action Sniffing Enhancement Card Text Fixed png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Sniffing_Enhancement_Card_Text_Fixed.png</span>
+                      <span class="asset-meta">Wizard Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Wizard Mouse Action/Steal_Card.png" alt="Wizard Mouse Action Steal Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Steal_Card.png</span>
+                      <span class="asset-meta">Wizard Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Wizard Mouse Action/Stun_Attack_Card_No_Icon.png" alt="Wizard Mouse Action Stun Attack Card No Icon png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Stun_Attack_Card_No_Icon.png</span>
+                      <span class="asset-meta">Wizard Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Action Cards/Wizard Mouse Action/Teleport_Card.png" alt="Wizard Mouse Action Teleport Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Teleport_Card.png</span>
+                      <span class="asset-meta">Wizard Mouse Action</span>
+                    </figcaption>
+                  </figure>
+                </div>
+              </section>
+            </article>
+
+            <article id="components-reaction" class="component-group">
+              <h3>Reaction Cards</h3>
+              <p class="group-count">10 source assets.</p>
+              <div class="gallery-grid">
+                  <figure class="gallery-card">
+                    <img src="All assets/Reaction Cards/Aura_Farm_Reaction_Card.png" alt="Reaction Cards Aura Farm Reaction Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Aura_Farm_Reaction_Card.png</span>
+                      <span class="asset-meta">Reaction Cards</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Reaction Cards/Image 1.png" alt="Reaction Cards Image 1 png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Image 1.png</span>
+                      <span class="asset-meta">Reaction Cards</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Reaction Cards/Image 2.png" alt="Reaction Cards Image 2 png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Image 2.png</span>
+                      <span class="asset-meta">Reaction Cards</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Reaction Cards/Image 3.png" alt="Reaction Cards Image 3 png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Image 3.png</span>
+                      <span class="asset-meta">Reaction Cards</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Reaction Cards/Image 4.png" alt="Reaction Cards Image 4 png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Image 4.png</span>
+                      <span class="asset-meta">Reaction Cards</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Reaction Cards/Image.png" alt="Reaction Cards Image png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Image.png</span>
+                      <span class="asset-meta">Reaction Cards</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Reaction Cards/Poison_Arrow_Reaction_Card.png" alt="Reaction Cards Poison Arrow Reaction Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Poison_Arrow_Reaction_Card.png</span>
+                      <span class="asset-meta">Reaction Cards</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Reaction Cards/Stealth_Reaction_Card.png" alt="Reaction Cards Stealth Reaction Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Stealth_Reaction_Card.png</span>
+                      <span class="asset-meta">Reaction Cards</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Reaction Cards/Swap_Reaction_Card.png" alt="Reaction Cards Swap Reaction Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Swap_Reaction_Card.png</span>
+                      <span class="asset-meta">Reaction Cards</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Reaction Cards/You_Forgot_Something_Reaction_Card.png" alt="Reaction Cards You Forgot Something Reaction Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">You_Forgot_Something_Reaction_Card.png</span>
+                      <span class="asset-meta">Reaction Cards</span>
+                    </figcaption>
+                  </figure>
+              </div>
+            </article>
+
+            <article id="components-hazard" class="component-group">
+              <h3>Hazard Cards</h3>
+              <p class="group-count">14 source assets.</p>
+              <div class="gallery-grid">
+                  <figure class="gallery-card">
+                    <img src="All assets/Hazard Cards/Career_Change_Card_Updated.png" alt="Hazard Cards Career Change Card Updated png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Career_Change_Card_Updated.png</span>
+                      <span class="asset-meta">Hazard Cards</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Hazard Cards/Ferocious Feline Felix.png" alt="Hazard Cards Ferocious Feline Felix png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Ferocious Feline Felix.png</span>
+                      <span class="asset-meta">Hazard Cards</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Hazard Cards/Image 1.png" alt="Hazard Cards Image 1 png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Image 1.png</span>
+                      <span class="asset-meta">Hazard Cards</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Hazard Cards/Image 2.png" alt="Hazard Cards Image 2 png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Image 2.png</span>
+                      <span class="asset-meta">Hazard Cards</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Hazard Cards/Image 3.png" alt="Hazard Cards Image 3 png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Image 3.png</span>
+                      <span class="asset-meta">Hazard Cards</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Hazard Cards/Image 4.png" alt="Hazard Cards Image 4 png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Image 4.png</span>
+                      <span class="asset-meta">Hazard Cards</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Hazard Cards/Image 5.png" alt="Hazard Cards Image 5 png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Image 5.png</span>
+                      <span class="asset-meta">Hazard Cards</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Hazard Cards/Image 6.png" alt="Hazard Cards Image 6 png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Image 6.png</span>
+                      <span class="asset-meta">Hazard Cards</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Hazard Cards/Image.png" alt="Hazard Cards Image png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Image.png</span>
+                      <span class="asset-meta">Hazard Cards</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Hazard Cards/MOUSETRAP_Card_Updated_Color.png" alt="Hazard Cards MOUSETRAP Card Updated Color png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">MOUSETRAP_Card_Updated_Color.png</span>
+                      <span class="asset-meta">Hazard Cards</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Hazard Cards/Mental_Health_Break_Card_Updated.png" alt="Hazard Cards Mental Health Break Card Updated png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Mental_Health_Break_Card_Updated.png</span>
+                      <span class="asset-meta">Hazard Cards</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Hazard Cards/Pirate Ambush.png" alt="Hazard Cards Pirate Ambush png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Pirate Ambush.png</span>
+                      <span class="asset-meta">Hazard Cards</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Hazard Cards/STAMPEDE_Hazard_Card.png" alt="Hazard Cards STAMPEDE Hazard Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">STAMPEDE_Hazard_Card.png</span>
+                      <span class="asset-meta">Hazard Cards</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Hazard Cards/Sandstorm.png" alt="Hazard Cards Sandstorm png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Sandstorm.png</span>
+                      <span class="asset-meta">Hazard Cards</span>
+                    </figcaption>
+                  </figure>
+              </div>
+            </article>
+
+            <article id="components-tiles" class="component-group">
+              <h3>Tiles</h3>
+              <p class="group-count">6 source tile assets.</p>
+              <div class="gallery-grid gallery-grid-tiles">
+                  <figure class="gallery-card">
+                    <img src="All assets/Tile Design/Blank_Tile_Frame_Only.png" alt="Tile Design Blank Tile Frame Only png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Blank_Tile_Frame_Only.png</span>
+                      <span class="asset-meta">Tile Design</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Tile Design/Castle_Tile_No_Text.png" alt="Tile Design Castle Tile No Text png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Castle_Tile_No_Text.png</span>
+                      <span class="asset-meta">Tile Design</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Tile Design/Cheese_Tile_No_Text.png" alt="Tile Design Cheese Tile No Text png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Cheese_Tile_No_Text.png</span>
+                      <span class="asset-meta">Tile Design</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Tile Design/Draw_Tile_No_Text.png" alt="Tile Design Draw Tile No Text png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Draw_Tile_No_Text.png</span>
+                      <span class="asset-meta">Tile Design</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Tile Design/Hazard_Tile_No_Text.png" alt="Tile Design Hazard Tile No Text png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Hazard_Tile_No_Text.png</span>
+                      <span class="asset-meta">Tile Design</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Tile Design/Tunnel_Tile_No_Text.png" alt="Tile Design Tunnel Tile No Text png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Tunnel_Tile_No_Text.png</span>
+                      <span class="asset-meta">Tile Design</span>
+                    </figcaption>
+                  </figure>
+              </div>
+            </article>
+
+            <article id="components-units" class="component-group">
+              <h3>Units</h3>
+              <p class="group-count">8 unit card assets.</p>
+              <div class="gallery-grid gallery-grid-units">
+                  <figure class="gallery-card">
+                    <img src="All assets/Unit Design/Image (1).png" alt="Unit Design Image 1 png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Image (1).png</span>
+                      <span class="asset-meta">Unit Design</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Unit Design/Image (2).png" alt="Unit Design Image 2 png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Image (2).png</span>
+                      <span class="asset-meta">Unit Design</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Unit Design/Image (3).png" alt="Unit Design Image 3 png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Image (3).png</span>
+                      <span class="asset-meta">Unit Design</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Unit Design/Image copy 2.png" alt="Unit Design Image copy 2 png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Image copy 2.png</span>
+                      <span class="asset-meta">Unit Design</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Unit Design/Image copy.png" alt="Unit Design Image copy png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Image copy.png</span>
+                      <span class="asset-meta">Unit Design</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Unit Design/Image.png" alt="Unit Design Image png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Image.png</span>
+                      <span class="asset-meta">Unit Design</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Unit Design/Knight_Mice_Card.png" alt="Unit Design Knight Mice Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Knight_Mice_Card.png</span>
+                      <span class="asset-meta">Unit Design</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="All assets/Unit Design/Warrior_Mice_Card.png" alt="Unit Design Warrior Mice Card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">Warrior_Mice_Card.png</span>
+                      <span class="asset-meta">Unit Design</span>
+                    </figcaption>
+                  </figure>
+              </div>
+            </article>
+
+            <article id="components-web-exports" class="component-group">
+              <h3>Web Exports (Current Site Files)</h3>
+              <p class="group-count">15 web-ready PNG exports currently used by the site build.</p>
+              <div class="gallery-grid">
+                  <figure class="gallery-card">
+                    <img src="assets/cards/hero-shield-card.png" alt="assets/cards hero-shield-card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">hero-shield-card.png</span>
+                      <span class="asset-meta">assets/cards</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="assets/cards/hero-teleport-card.png" alt="assets/cards hero-teleport-card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">hero-teleport-card.png</span>
+                      <span class="asset-meta">assets/cards</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="assets/cards/warrior-critical-hit-card.png" alt="assets/cards warrior-critical-hit-card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">warrior-critical-hit-card.png</span>
+                      <span class="asset-meta">assets/cards</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="assets/cards/wizard-sniffing-enhancement-card.png" alt="assets/cards wizard-sniffing-enhancement-card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">wizard-sniffing-enhancement-card.png</span>
+                      <span class="asset-meta">assets/cards</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="assets/hazard/mousetrap-hazard-card.png" alt="assets/hazard mousetrap-hazard-card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">mousetrap-hazard-card.png</span>
+                      <span class="asset-meta">assets/hazard</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="assets/hazard/pirate-ambush-hazard-card.png" alt="assets/hazard pirate-ambush-hazard-card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">pirate-ambush-hazard-card.png</span>
+                      <span class="asset-meta">assets/hazard</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="assets/hazard/sandstorm-hazard-card.png" alt="assets/hazard sandstorm-hazard-card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">sandstorm-hazard-card.png</span>
+                      <span class="asset-meta">assets/hazard</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="assets/reaction/poison-arrow-reaction-card.png" alt="assets/reaction poison-arrow-reaction-card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">poison-arrow-reaction-card.png</span>
+                      <span class="asset-meta">assets/reaction</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="assets/reaction/swap-reaction-card.png" alt="assets/reaction swap-reaction-card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">swap-reaction-card.png</span>
+                      <span class="asset-meta">assets/reaction</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="assets/tiles/castle-tile.png" alt="assets/tiles castle-tile png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">castle-tile.png</span>
+                      <span class="asset-meta">assets/tiles</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="assets/tiles/cheese-tile.png" alt="assets/tiles cheese-tile png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">cheese-tile.png</span>
+                      <span class="asset-meta">assets/tiles</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="assets/tiles/hazard-tile.png" alt="assets/tiles hazard-tile png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">hazard-tile.png</span>
+                      <span class="asset-meta">assets/tiles</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="assets/tiles/tunnel-tile.png" alt="assets/tiles tunnel-tile png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">tunnel-tile.png</span>
+                      <span class="asset-meta">assets/tiles</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="assets/units/knight-mice-card.png" alt="assets/units knight-mice-card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">knight-mice-card.png</span>
+                      <span class="asset-meta">assets/units</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="gallery-card">
+                    <img src="assets/units/warrior-mice-card.png" alt="assets/units warrior-mice-card png" loading="lazy" decoding="async">
+                    <figcaption>
+                      <span class="asset-label">warrior-mice-card.png</span>
+                      <span class="asset-meta">assets/units</span>
+                    </figcaption>
+                  </figure>
+              </div>
+            </article>
+          </section>
+        </div>
+      </div>
+    </section>
+    <section class="tab-panel" data-tab-panel="docs" aria-label="Logs and analysis tab" hidden>
+      <div class="tab-layout">
+        <aside class="section-nav-wrap">
+          <p class="section-nav-title">Logs & Analysis</p>
+          <nav class="section-nav" aria-label="Logs and analysis sections">
+            <a href="#rulebook" data-tab-target="docs">Rulebook</a>
+            <a href="#meeting-log" data-tab-target="docs">Meeting Log</a>
+            <a href="#playtesting-log" data-tab-target="docs">Playtesting Log</a>
+            <a href="#flowcharts" data-tab-target="docs">Flowcharts</a>
+            <a href="#quantitative-analysis" data-tab-target="docs">Quantitative Analysis</a>
+            <a href="#dynamics" data-tab-target="docs">Dynamics</a>
+          </nav>
+        </aside>
+        <div class="tab-content">
+          <section id="rulebook" class="panel docs-section reveal reveal-fade">
+            <h2>Rulebook Link (PDF)</h2>
+            <article class="doc-card">
+              <button class="button button-disabled" type="button" disabled>View Rulebook PDF</button>
+            </article>
+          </section>
+
+          <section id="meeting-log" class="panel docs-section reveal reveal-fade">
+            <h2>Group Meeting Log Link (PDF)</h2>
+            <article class="doc-card">
+              <a class="button pdf-link" href="docs/meeting-log.pdf" target="_blank" rel="noopener noreferrer">View Meeting Log PDF</a>
+            </article>
+          </section>
+
+          <section id="playtesting-log" class="panel docs-section reveal reveal-fade">
+            <h2>Playtesting Log Link (PDF)</h2>
+            <article class="doc-card">
+              <button class="button button-disabled" type="button" disabled>View Playtesting Log PDF</button>
+            </article>
+          </section>
+
+          <section id="flowcharts" class="panel docs-section reveal reveal-fade">
+            <h2>Flowcharts Link (PDF)</h2>
+            <article class="doc-card">
+              <button class="button button-disabled" type="button" disabled>View Flowcharts PDF</button>
+            </article>
+          </section>
+
+          <section id="quantitative-analysis" class="panel docs-section reveal reveal-fade">
+            <h2>Quantitative Analysis Link (PDF)</h2>
+            <article class="doc-card">
+              <button class="button button-disabled" type="button" disabled>View Quantitative Analysis PDF</button>
+            </article>
+          </section>
+
+          <section id="dynamics" class="panel text-section reveal reveal-slide-right">
+            <h2>Dynamics / Trade-Offs / Dilemmas / Typical Playtime</h2>
+            <p>THIS CAN ONLY BE DONE AFTER A FEW PLAYTESTS</p>
+            <ul>
+              <li>A description of the main game Dynamics (i.e. successful strategies that emerged)</li>
+              <li>A description of trade-offs and dilemmas that emerge in gameplay.</li>
+              <li>A description of how long a typical play session lasts.</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="tab-panel" data-tab-panel="contributions" aria-label="Contributions tab" hidden>
+      <div class="tab-layout">
+        <aside class="section-nav-wrap">
+          <p class="section-nav-title">Contributions</p>
+          <nav class="section-nav" aria-label="Contributions sections">
+            <a href="#team-contributions" data-tab-target="contributions">Team Contributions</a>
+          </nav>
+        </aside>
+        <div class="tab-content">
+          <section id="team-contributions" class="panel text-section reveal reveal-pop">
+            <h2>Team Contribution Breakdown</h2>
+            <p class="status pending">Placeholder</p>
+            <h3>Contributions</h3>
+            <p>The last part of the submission needs to detail exactly what each team member contributed to the project, beyond general ideas or conversation. A record needs to be produced of exactly which game deliverables were worked on by whom and by approximately what percentage, in case a dispute arises as to the fair assignment of the grade to each team member (if you are submitting a world-facing website, this can be a link to a separate downloadable PDF from the web page).</p>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Built for IAT 210 board game submission · Last updated March 7, 2026.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
