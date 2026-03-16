@@ -256,14 +256,30 @@ function enhanceGalleryAssets() {
       imageLink.appendChild(image);
     }
 
-    if (!figcaption.querySelector('.gallery-open-link')) {
+    let actions = figcaption.querySelector('.gallery-actions');
+    if (!actions) {
+      actions = document.createElement('div');
+      actions.className = 'gallery-actions';
+      figcaption.appendChild(actions);
+    }
+
+    if (!actions.querySelector('.gallery-open-link')) {
       const actionLink = document.createElement('a');
       actionLink.className = 'gallery-open-link';
       actionLink.href = src;
       actionLink.target = '_blank';
       actionLink.rel = 'noopener noreferrer';
       actionLink.textContent = 'View Image';
-      figcaption.appendChild(actionLink);
+      actions.appendChild(actionLink);
+    }
+
+    if (!actions.querySelector('.gallery-download-link')) {
+      const downloadLink = document.createElement('a');
+      downloadLink.className = 'gallery-open-link gallery-download-link';
+      downloadLink.href = src;
+      downloadLink.setAttribute('download', assetLabel);
+      downloadLink.textContent = 'Download Image';
+      actions.appendChild(downloadLink);
     }
   });
 }

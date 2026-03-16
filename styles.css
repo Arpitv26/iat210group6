@@ -797,11 +797,18 @@ main {
   font-weight: 620;
 }
 
+.gallery-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.38rem;
+  margin-top: auto;
+  padding-top: 0.18rem;
+}
+
 .gallery-open-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-top: auto;
   padding: 0.28rem 0.62rem;
   border-radius: 999px;
   border: 1px solid rgba(32, 88, 60, 0.22);
@@ -812,6 +819,10 @@ main {
   letter-spacing: 0.02em;
   text-decoration: none;
   transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.gallery-download-link {
+  background: rgba(233, 245, 224, 0.96);
 }
 
 .gallery-open-link:hover,
